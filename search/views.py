@@ -9,7 +9,7 @@ import redis
 from decimal import Decimal
 
 client = Elasticsearch(hosts=["127.0.0.1"])
-redis_cli = redis.StrictRedis()
+redis_cli = redis.StrictRedis(host="localhost", charset="gbk",decode_responses=True)
 
 
 class IndexView(View):
