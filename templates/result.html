@@ -80,14 +80,14 @@
                 
             </div>
             <div class="historyArea">
-{#                <div class="hotSearch">#}
-{#                	<h6>热门搜索</h6>#}
-{#                    <ul class="historyList">#}
-{#                        {% for search_word in topn_search %}#}
-{#                            <li><a href="/search?q={{ search_word }}">{% autoescape off %}{{ search_word }}{% endautoescape %}</a></li>#}
-{#                        {% endfor %}#}
-{#                    </ul>#}
-{#                </div>#}
+                <div class="hotSearch">
+                	<h6>热门搜索</h6>
+                    <ul class="historyList">
+                        {% for search_word in topn_search %}
+                            <li><a href="/search?q={{ search_word }}">{% autoescape off %}{{ search_word }}{% endautoescape %}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
                 <div class="mySearch">
                 	<h6>我的搜索</h6>
                     <ul class="historyList">
